@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom styling -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Credgator</title>
+
+    <!-- Custom javascript -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body
+    class="min-h-screen font-Poppins bg-slate-50 dark:bg-black dark:text-white"
+  >
+
+  <!-- Navigation section -->
+    <header class="bg-papayawhip-dark z-10 text-black dark:text-white">
+      <section class="mx-auto flex max-w-full items-center justify-between p-4">
+        <h1 class="text-3xl ml-6 font-medium">
+          <a href="#hero">Credga🐊or</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+          >
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <!-- Large screen sizes -->
+          <nav class="hidden space-x-8 text-md md:block" aria-label="main">
+            <a href="about" class="hover:opacity-90">About</a>
+            <a href="services" class="hover:opacity-90">Services</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="hover:opacity-90">Contact</a>
+            <button class="button"><a href="register.html" target="_blank" rel="noopener noreferrer">Register</a></button>
+          </nav>
+        </div>
+      </section>
+      <!-- Mobile devices -->
+      <section
+        id="mobile-menu"
+        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-papayawhip-dark text-3xl"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="about" class="w-full py-6 text-center hover:opacity-90"
+            >About</a
+          >
+          <a href="services" class="w-full py-6 text-center hover:opacity-90"
+            >Services</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
+            >Contact</a
+          >
+          <button class="button">REGISTER</button>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Navigation section ends -->
+
+    <!-- Main section begins -->
+    <main class="mx-auto bg-papayawhip-dark max-w-full">
+
+      <!-- Hero section -->
+      <section
+        id="hero"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse font-Poppins items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-full text-center text-3xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+          >
+            Invest in the future with
+            <span class="text-indigo-700 dark:text-indigo-300">Credga🐊or</span>
+          </h2>
+          <p
+            class="mt-4 max-w-md text-center text-lg text-slate-700 dark:text-slate-400 sm:text-left"
+          >
+            Investing with us means partnering with a firm that is as invested
+            in your financial success as you are. We are committed to your
+            success.
+          </p>
+        </article>
+        <img
+          class="sm:w-1/2 w-full mt-12"
+          src="./img/ark.svg"
+          alt="Rocket Dab"
+        />
+      </section>
+
+      <!-- Hero section ends -->
+
+      <!-- Aside section -->
+
+      <aside class="bg-papayawhip">
+        <h1 class="text-white text-2xl">What Is Credgator?</h1>
+        <p class="text-slate-100 text-lg mb-6">
+          Our commitment to individualized strategies, expert management, risk
+          mitigation, and exceptional client service, <br />
+          combined with our dedication to transparency and ethical standards,
+          creates a robust platform where your investments can thrive.
+        </p>
+        <img class="my-6" src="img/grow line.png" alt="Grow" />
+        <div class="time"></div>
+        <button>INVEST NOW</button>
+      </aside>
+
+      <!-- Aside ends -->
+
+      <!-- Coin converter section -->
+
+      <div class="coin_container"></div>
+      <section class="section mb-12 mt-6">
+        <div class="container mb-12 mt-6">
+          
+
+          <form class="mt-6" action="">
+            <input
+            class="input"
+              type="text"
+              name="amount"
+              id="amount"
+              placeholder="Enter Amount"
+              required
+            />
+
+            <label id="fromCurrencyName"></label>
+            <div id="select-field">
+              <select
+                name="fromCurrency"
+                id="fromCurrency"
+                onchange="showFromCurrencyName()"
+              >
+                <option value="USD" selected="">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="INR">INR - India Rupee</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="ZAR">ZAR - South African Rand</option>
+                <option value="BGN">BGN - Bulgarian Lev</option>
+                <option value="SGD">SGD - Singapore Dollar</option>
+                <option value="HKD">HKD - Hong Kong Dollar</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="THB">THB - Thai Baht</option>
+                <option value="HUF">HUF - Hungarian Forint</option>
+                <option value="CNY">CNY - Chinese Yuan Renminbi</option>
+                <option value="NOK">NOK - Norwegian Krone</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="GHS">GHS - Ghanians Cedi</option>
+                <option value="NGN">NGN - Nigerian Naira</option>
+              </select>
+
+              <select
+                name="toCurrency"
+                id="toCurrency"
+                onchange="showCurrencyName()"
+              >
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="USDT">Tether (USDT)</option>
+                <option value="BNB">Binance Coin (BNB)</option>
+                <option value="USDC">USD Coin (USDC)</option>
+                <option value="XRP">XRP (XRP)</option>
+                <option value="BUSD">Binance USD (BUSD)</option>
+                <option value="ADA">cardano (ADA)</option>
+                <option value="DOGE">Dogecoin (DOGE)</option>
+                <option value="MATIC">Polygon (MATIC)</option>
+                <option value="SOL">Solana (SOL)</option>
+                <option value="DOT">Polkadot (DOT)</option>
+                <option value="SHIB">Shiba Inu (SHIB)</option>
+                <option value="LTC">Litecoin (LTC)</option>
+                <option value="TRX">Tron (TRX)</option>
+                <option value="AVAX">Avalanche (AVAX)</option>
+              </select>
+            </div>
+
+            <br />
+
+            <button type="button" id="convert" class="button primary-btn">
+              Convert
+            </button>
+          </form>
+
+          <p id="result"></p>
+        </div>
+      </section>
+
+      <!-- Converter section ends -->
+      
+
+      <!-- Instruction section -->
+      <section
+        id=""
+        class="widescreen:section-min-height tallscreen:section-min-height font-Poppins my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-3xl font-bold text-slate-900 dark:text-white sm:text-3xl"
+        >
+          How it works
+        </h2>
+        <ul
+          class="mx-auto my-12 flex list-none flex-col justify-evenly items-center gap-8 sm:flex-row"
+        >
+          <li
+            class="flex w-full flex-col items-center border border-solid rounded-3xl shadow-xl py-6 px-2 sm:w-1/3"
+          >
+            <img
+              src="./img/instruction-1.png"
+              alt="Explorer"
+              class="mb-6 w-1/3 card-banner"
+            />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Step 1
+            </h3>
+            <p class="mt-2 text-center text-papayawhip-light text-lg sm:block">
+              Register
+            </p>
+
+            <p
+              class="mt-2 text-center text-base text-slate-500 dark:text-slate-400"
+            >
+              Once you register, you are eligible to invest and withdraw from
+              your dashboard.
+            </p>
+          </li>
+          <li
+            class="flex w-full flex-col items-center py-6 px-2 border border-solid rounded-3xl shadow-xl sm:w-1/3"
+          >
+            <img
+              src="./img/instruction-2.png"
+              alt="Explorer"
+              class="mb-6 w-1/3 card-banner"
+            />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Step 2
+            </h3>
+            <p class="mt-2 text-center text-lg text-papayawhip-light sm:block">
+              Explore
+            </p>
+
+            <p
+              class="mt-2 text-center text-base text-slate-500 dark:text-slate-400"
+            >
+              Once you register, you are eligible to invest and withdraw from
+              your dashboard.
+            </p>
+          </li>
+        </ul>
+        <ul
+          class="mx-auto my-12 flex list-none justify-evenly flex-col items-center gap-8 sm:flex-row"
+        >
+          <li
+            class="flex w-full flex-col border border-solid rounded-3xl shadow-xl items-center py-6 px-2 sm:w-1/3"
+          >
+            <img
+              src="./img/instruction-3.png"
+              alt="Explorer"
+              class="mb-6 w-1/3 card-banner"
+            />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Step 3
+            </h3>
+            <p class="mt-2 text-center text-papayawhip-light text-lg sm:block">
+              Transact
+            </p>
+
+            <p
+              class="mt-2 text-center text-base text-slate-500 dark:text-slate-400"
+            >
+              Once you register, you are eligible to invest and withdraw from
+              your dashboard.
+            </p>
+          </li>
+          <li
+            class="flex w-full flex-col items-center rounded-3xl shadow-xl border border-solid py-6 px-2 sm:w-1/3"
+          >
+            <img
+              src="./img/instruction-4.png"
+              alt="Explorer"
+              class="mb-6 w-1/3"
+            />
+            <h3 class="text-center text-2xl text-slate-900 dark:text-white">
+              Step 4
+            </h3>
+            <p class="mt-2 text-center text-papayawhip-light text-lg sm:block">
+              Withdraw
+            </p>
+
+            <p
+              class="mt-2 text-center text-base text-slate-500 dark:text-slate-400"
+            >
+              Once you register, you are eligible to invest and withdraw from
+              your dashboard.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Instruction section ends -->
+
+      <!-- Testimonial section begins -->
+
+      <h2 id="testimonials" class="my-16 text-center  text-3xl font-bold">
+        What Our Past Benefeciaries Say...
+      </h2>
+      <div class="wrapper my-12 font-Poppins">
+        <div class="box">
+          <i class="fas fa-quote-left quote"></i>
+          <p>
+            The Credgator customer service is one of the best I've ever seen after the Namecheap platform. They were with me all through till my transaction frustration was resolved. I gladly recommend their service to everyone.
+          </p>
+          <div class="content">
+            <div class="info">
+              <div class="name">Jennifer Andrews</div>
+              <div class="job"></div>
+              <div class="stars">
+                <i class="fas fa-check"></i>
+                <i class="">Verified Beneficiary</i>
+              </div>
+            </div>
+            <div class="image">
+              <img src="img/avatar1.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-quote-left quote"></i>
+          <p>
+            I knew I not only wanted &#8212;
+            <span class="italic">I needed</span> &#8212; Credgator services from initial impressions. Apex delivers, and has made my life a lot easier.
+          </p>
+          <div class="content">
+            <div class="info">
+              <div class="name">Marcel Kraker</div>
+              <div class="job"></div>
+              <div class="stars">
+                <i class="fas fa-check"></i>
+                <i class="">Verified Beneficiary</i>
+              </div>
+            </div>
+            <div class="image">
+              <img src="img/avatar4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-quote-left quote"></i>
+          <p>
+            Credgator has always been there for me. Their packages are top-notch and are more than I expected. Life-long customer! A++
+            experience.
+          </p>
+          <div class="content">
+            <div class="info">
+              <div class="name">Janice Griffith</div>
+              <div class="job"></div>
+              <div class="stars">
+                <i class="fas fa-check"></i>
+                <i class="text-violet-800">Verified Beneficiary</i>
+              </div>
+            </div>
+            <div class="image">
+              <img src="img/avatar3.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial section ends -->
+
+      <!-- 
+    - #FOOTER
+  -->
+      <footer
+        class="flex bg-papayawhip text-md font-Poppins py-24 sm:flex-row flex-col p-6 justify-between gap-4 items-start sm:items-center text-start mt-24"
+      >
+        <div class="flex">
+          <img src="/favicon.svg" width="50" />
+          <h3 class="text-black mt-2 text-2xl dark:text-white">Credga🐊or</h3>
+        </div>
+        <div class="my-4 py-6">
+          <h3 class="mb-3 text-lg text-papayawhip-light">COMPANY</h3>
+
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Home</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">About</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Terms and Conditions</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Privacy policy</a>
+          </p>
+        </div>
+        <div class="my-4 py-6">
+          <h3 class="mb-3 text-lg text-papayawhip-light">SUPPORT</h3>
+
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Help center</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Feedback</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Submit request</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Trade policy</a>
+          </p>
+        </div>
+        <div class="my-4 py-6">
+          <h3 class="mb-3 text-lg text-papayawhip-light">SERVICES</h3>
+
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Careers</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Market</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Referrals</a>
+          </p>
+          <p class="text-base hover:text-papayawhip-light">
+            <a class="" href="/">Network</a>
+          </p>
+        </div>
+      </footer>
+
+      <!-- Footer section ends -->
+       
+      <!-- Currency converter script -->
+      <script>
+        function showCurrencyName() {
+          var selectCurrency = document.getElementById("toCurrency");
+          var currencyName =
+            selectCurrency.options[selectCurrency.selectedIndex].text;
+          document.getElementById("currencyName").innerHTML = currencyName;
+        }
+
+        function showFromCurrencyName() {
+          var selectFromCurrency = document.getElementById("fromCurrency");
+          var fromCurrencyName =
+            selectFromCurrency.options[selectFromCurrency.selectedIndex].text;
+          document.getElementById("fromCurrencyName").innerHTML =
+            fromCurrencyName;
+        }
+
+        const amountInput = document.querySelector("#amount");
+        const fromCurrencySelect = document.querySelector("#fromCurrency");
+        const toCurrencySelect = document.querySelector("#toCurrency");
+        const convertButton = document.querySelector("#convert");
+        const resultParagraph = document.querySelector("#result");
+
+        convertButton.addEventListener("click", () => {
+          const amount = amountInput.value;
+          const fromCurrency = fromCurrencySelect.value;
+          const toCurrency = toCurrencySelect.value;
+          const apiKey =
+            "d4e67232b91eed1c2b91a761468984d44ab69e22b44063020a0306255c591e47";
+          const apiUrl = `https://min-api.cryptocompare.com/data/price?fsym=${toCurrency}&tsyms=${fromCurrency}&api_key=${apiKey}`;
+
+          fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              const rate = data[fromCurrency];
+              const result = amount / rate;
+
+              resultParagraph.innerHTML = `${amount} ${fromCurrency} is equal to ${result.toFixed(8)} ${toCurrency}`;
+            })
+            .catch((error) => {
+              resultParagraph.innerHTML =
+                "Error: Unable to fetch exchange rate.";
+              console.error(error);
+            });
+        });
+      </script>
+    </main>
+  </body>
+</html>
